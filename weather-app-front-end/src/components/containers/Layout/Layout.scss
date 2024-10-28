@@ -1,0 +1,12 @@
+.wrapper {
+	height: 100dvh;
+	display: flex;
+	flex-direction: column;
+
+	background: var(--main-gradient);
+}
+
+.main {
+	padding: 40px 0;
+	flex-grow: 1;
+}

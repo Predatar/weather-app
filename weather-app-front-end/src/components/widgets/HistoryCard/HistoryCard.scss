@@ -1,0 +1,50 @@
+.history-card {
+	padding: 12px;
+	width: 100%;
+	border-radius: 8px;
+	background: var(--gray-30);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	animation: showCard 0.5s ease-out calc(var(--i) * 0.1s) backwards ;
+
+	&__info {
+	}
+
+	&__name {
+		margin-bottom: 4px;
+	}
+
+	&__weather {
+		display: flex;
+		align-items: center;
+	}
+
+	&__temp {
+		margin-right: 4px;
+	}
+
+	&__img {
+		width: 51px;
+		height: 51px;
+
+		filter: drop-shadow(0 2px 3px var(--gray-50));
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+@keyframes showCard {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
